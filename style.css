@@ -27,9 +27,8 @@ header {
 nav a#nav-logo {
     background-image: url(img/html5css3-147x88.png);
     display: block;
-    /* background-position: center; */
-    min-width: 50px;
-    min-height: 90px;
+    width: 150px;
+    height: 90px;
     margin: 10px;
     background-repeat: no-repeat;
 }
