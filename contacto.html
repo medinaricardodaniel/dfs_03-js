@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,47 @@
     <style></style>
     <title>Página de Inicio | Suplemento especial sobre monitores</title>
 </head>
+
 <body>
     <header>
         <nav><a href="index.html" id="nav-logo" tabindex="1"></a>
             <ol>
                 <li><a href="index.html" alt="Ir a la página de Inicio" tabindex="2">Inicio</a></li>
-                <li><a href="index.html#presentacion"alt="Ir a la sección de Presentación" tabindex="3">Presentación</a></li>
-                <li><a href="index.html#tecnologias"alt="Ir a la sección de Tecnologías" tabindex="4">Tecnologías</a></li>
-                <li><a href="index.html#monitores"alt="Ir a la sección de Monitores" tabindex="5">Monitores</a></li>
-                <li><a href="comparativa.html" alt="Ir a la página de comparación de monitores" tabindex="6">Comparación</a></li>
-                <li><a href="contacto.html" alt="Ir a la página de Contacto" class="active" tabindex="7">Contacto</a></li>
+                <li><a href="index.html#presentacion" alt="Ir a la sección de Presentación"
+                        tabindex="3">Presentación</a></li>
+                <li><a href="index.html#tecnologias" alt="Ir a la sección de Tecnologías" tabindex="4">Tecnologías</a>
+                </li>
+                <li><a href="index.html#monitores" alt="Ir a la sección de Monitores" tabindex="5">Monitores</a></li>
+                <li><a href="comparativa.html" alt="Ir a la página de comparación de monitores"
+                        tabindex="6">Comparación</a></li>
+                <li><a href="contacto.html" alt="Ir a la página de Contacto" class="active" tabindex="7">Contacto</a>
+                </li>
             </ol>
         </nav>
     </header>
-    <main><h1>Contactanos</h1></main>
+    <main>
+        <h1>Contactanos</h1>
+        <form>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br>
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" id="apellido" name="apellido"><br>
+            <label for="email">email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea name="mensaje" rows="8"></textarea><br>
+            <input type="checkbox" id="acepto" name="acepto" value="true"><label for="acepto"> Acepto los términos y
+                condiciones</label><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
     <footer>
-        <p>Por <a href="maito:medinaricardodaniel@gmail.com" alt="envair un correo electrónico a medinaricardodaniel@gmail.com">Ricardo Daniel Medina</a></p>
-        <p>Actividad número 1: HTML y CSS<br>"Desarrollador Full Stack" dictado por <a href="https://www.ispc.edu.ar/" alt="ir al sitio del Instituto Superior Politécnico de Córdoba" target="_blank">ISPC</a> (Curso: 2020 - Entre Ríos)</p>
+        <p>Por <a href="maito:medinaricardodaniel@gmail.com"
+                alt="envair un correo electrónico a medinaricardodaniel@gmail.com">Ricardo Daniel Medina</a></p>
+        <p>Actividad número 1: HTML y CSS<br>"Desarrollador Full Stack" dictado por <a href="https://www.ispc.edu.ar/"
+                alt="ir al sitio del Instituto Superior Politécnico de Córdoba" target="_blank">ISPC</a> (Curso: 2020 -
+            Entre Ríos)</p>
     </footer>
 </body>
+
 </html>
