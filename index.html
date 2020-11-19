@@ -6,36 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <style>
-        #monitores,
-        #presentacion {
-            background-color: white;
-        }
-
-        hr {
-            margin: 20px 0;
-        }
-
-        #portada {
-            background-image: url("img/particles-1373684_1280-1061x707.jpg");
-            background-position: bottom;
-            background-color: indigo;
-            max-height: 450px;
-            min-height: 300px;
-            padding: 160px 30px 0;
-            margin-bottom: -106px;
-        }
-
-        #portada h1 {
-            padding: 30px;
-
-        }
-
         #tecnologias figure {
             margin: 0 4px 4px;
             padding: 12px;
-            background-color: #ddd;
+            background-color: whitesmoke;
             text-align: center;
-        }
         }
     </style>
     <title>Página de Inicio | Suplemento especial sobre monitores</title>
@@ -43,7 +18,7 @@
 
 <body>
     <header>
-        <div id="portada">
+        <div class="titular">
             <h1>Suplemento especial sobre monitores</h1>
         </div>
         <nav><a href="index.html" id="nav-logo" tabindex="1"></a>
@@ -53,8 +28,8 @@
                         tabindex="3">Presentación</a></li>
                 <li><a href="index.html#tecnologias" alt="Ir a la sección de Tecnologías" tabindex="4">Tecnologías</a>
                 </li>
-                <li><a href="index.html#monitores" alt="Ir a la sección de Monitores" tabindex="5">Monitores</a></li>
-                <li><a href="comparativa.html" alt="Ir a la página de comparación de monitores"
+                <li><a href="monitores.html" alt="Ir a la página de Monitores" tabindex="5">Monitores</a></li>
+                <li><a href="monitores.html#comparativa" alt="Ir a la comparación en la página de monitores"
                         tabindex="6">Comparación</a></li>
                 <li><a href="contacto.html" alt="Ir a la página de Contacto" tabindex="7">Contacto</a></li>
             </ol>
@@ -71,22 +46,33 @@
                 <b>Observación</b>: Toda la información publicada en este sitio no ha sido corroborada y sólo es de
                 relleno a fines prácticos del ejercicio.</p>
         </section>
-        <section id="tecnologias">
-            <h2>Tecnologías de paneles</h2>
-            <p style="font-size: large;">Todo monitor con panel de cristal líquido tiene un tipo de matriz (o panel) que
-                tiene unas características específicas que le hacen adecuado para según unas u otras actividades. En
-                este tutorial hablaremos de los tres tipos de paneles que hay ahora mismo y qué panel es el que debes de
-                elegir para tu pantalla, en función del uso.</p>
-            <p>La tecnología Thin Film Transistor Liquid Crystal Display (abreviado, TFT LCD) lleva con nosotros más
-                años de los que muchos de vosotros suponéis. Los primeros paneles LCD se comenzaron a fabricar en el año
-                1986, aunque por aquel entonces solo se podían encontrar montados en los primeros ordenadores personales
-                portátiles. Sin embargo, muy pronto los fabricantes de monitores comenzaron a lanzar sus primeros
-                modelos de este tipo de panel para sustituir a los tradicionales monitores de escritorio. Cosa que han
-                logrado hacer gracias a su tamaño y peso mucho más pequeño, que nos permite tener más espacio disponible
-                encima de nuestro escritorios.</p>
-            <p>En la actualidad hay tres tipos de paneles en uso en el mercado (cada uno con variantes): TN, VA e IPS.
-                Cada uno de ellos tiene sus propias características, que lo hacen más adecuado para según qué uso, y son
-                aspectos que debéis de tener bastante en cuenta a la hora de elegir para tu pantalla.</p>
+        <section id="tecnologias" class="secFondoBco">
+            <article>
+                <h2>Tecnologías de paneles</h2>
+                <p style="font-size: large;">Todo monitor con panel de cristal líquido tiene un tipo de matriz (o panel)
+                    que
+                    tiene unas características específicas que le hacen adecuado para según unas u otras actividades. En
+                    este tutorial hablaremos de los tres tipos de paneles que hay ahora mismo y qué panel es el que
+                    debes de
+                    elegir para tu pantalla, en función del uso.</p>
+                <p>La tecnología Thin Film Transistor Liquid Crystal Display (abreviado, TFT LCD) lleva con nosotros más
+                    años de los que muchos de vosotros suponéis. Los primeros paneles LCD se comenzaron a fabricar en el
+                    año
+                    1986, aunque por aquel entonces solo se podían encontrar montados en los primeros ordenadores
+                    personales
+                    portátiles. Sin embargo, muy pronto los fabricantes de monitores comenzaron a lanzar sus primeros
+                    modelos de este tipo de panel para sustituir a los tradicionales monitores de escritorio. Cosa que
+                    han
+                    logrado hacer gracias a su tamaño y peso mucho más pequeño, que nos permite tener más espacio
+                    disponible
+                    encima de nuestro escritorios.</p>
+                <p>En la actualidad hay tres tipos de paneles en uso en el mercado (cada uno con variantes): TN, VA e
+                    IPS.
+                    Cada uno de ellos tiene sus propias características, que lo hacen más adecuado para según qué uso, y
+                    son
+                    aspectos que debéis de tener bastante en cuenta a la hora de elegir para tu pantalla.</p>
+            </article>
+            <hr />
             <article>
                 <h3>Paneles TN (Twisted Nematic)</h3>
                 <p>Este tipo de panel es el primero que llegó al mercado de consumo en grandes cantidades, aunque ya
@@ -148,70 +134,6 @@
                 </figure>
             </article>
             <p><i>Fuente: <a href="https://hardzone.es/" alt="Ir a hardzone.es" target="_blank">hardzone.es</a></i></p>
-        </section>
-        <section id="monitores">
-            <h2>Algunos monitores con tecnología IPS</h2>
-            <article>
-                <img src="img/monitor-dell_e2417h-202x154.jpg"
-                    style="width: 202px; height: 154px; float: left; margin-right: 12px;"
-                    alt="Imagen ilustrativa del monitor Dell E2417H" />
-                <h3>Monitor Dell E2417H</h3>
-                <h4>Disfrutá de todas las cualidades que el monitor <strong>Dell E2417H</strong> tiene para ofrecerte.
-                </h4>
-                <p>Percibí las imágenes de una manera completamente diferente y complementa cualquier espacio ya sea en
-                    tu casa u oficina.</p>
-                <h4>Un monitor a tu medida</h4>
-                <p>Con tu pantalla LED no solo ahorrás energía, ya que su consumo es bajo, sino que vas a ver colores
-                    más nítidos y definidos en tus películas o series favoritas.</p>
-                <h4>Una experiencia visual de calidad</h4>
-                <p>Este monitor de 23.8" te va a resultar de gran comodidad para estudiar, trabajar o ver una película
-                    en tus tiempos de ocio. Asimismo, su resolución de 1920 x 1080 te permite disfrutar de momentos
-                    únicos gracias a una imagen con gran nitidez.</p>
-                <a class="boton" href="comparativa.html" alt="Ir a la tabla comparativa de monitores">Comparar</a>
-            </article>
-            <hr style="clear: left;" />
-            <article>
-                <img src="img/monitor-dell_p2419h-203x168.jpg"
-                    style="width: 203px; height: 168px; float: left; margin-right: 12px;"
-                    alt="Imagen ilustrativa del monitor Dell P2419H" />
-                <h3>Monitor Dell P2419H</h3>
-                <h4>Disfrutá de todas las cualidades que el monitor <strong>Dell P2419H</strong> tiene para ofrecerte.
-                </h4>
-                <p>Percibí las imágenes de una manera completamente diferente y complementa cualquier espacio ya sea en
-                    tu casa u oficina.</p>
-                <h4>Un monitor a tu medida</h4>
-                <p>Con tu pantalla LED no solo ahorrás energía, ya que su consumo es bajo, sino que vas a ver colores
-                    más nítidos y definidos en tus películas o series favoritas.</p>
-                <h4>Una experiencia visual de calidad</h4>
-                <p>Este monitor de 24" te va a resultar de gran comodidad para estudiar, trabajar o ver una película en
-                    tus tiempos de ocio. Asimismo, su resolución de 1920 x 1080 te permite disfrutar de momentos únicos
-                    gracias a una imagen con gran nitidez.</p>
-                <a class="boton" href="comparativa.html" alt="Ir a la tabla comparativa de monitores">Comparar</a>
-            </article>
-            <hr style="clear: left;" />
-            <article>
-                <img src="img/monitor-benq_gw2480-203x159.jpg"
-                    style="width: 203px; height: 159px; float: left; margin-right: 12px;"
-                    alt="Imagen ilustrativa del monitor BenQ GW3480" />
-                <h3>Monitor BenQ GW3480</h3>
-                <h4>Disfrutá de todas las cualidades que el monitor <strong>BenQ GW2480</strong> tiene para ofrecerte.
-                </h4>
-                <p>Percibí las imágenes de una manera completamente diferente y complementa cualquier espacio ya sea en
-                    tu casa u oficina.</p>
-                <h4>Un monitor a tu medida</h4>
-                <p>Con tu pantalla LED no solo ahorrás energía, ya que su consumo es bajo, sino que vas a ver colores
-                    más nítidos y definidos en tus películas o series favoritas.</p>
-                <h4>Una experiencia visual de calidad</h4>
-                <p>Este monitor de 23.8" te va a resultar de gran comodidad para estudiar, trabajar o ver una película
-                    en tus tiempos de ocio. Asimismo, su resolución de 1920 x 1080 te permite disfrutar de momentos
-                    únicos gracias a una imagen con gran nitidez. Por último, su tiempo de respuesta de 5 ms lo hace
-                    ideal para gamers y cinéfilos porque es capaz de mostrar imágenes en movimiento sin halos o bordes
-                    borrosos.</p>
-                <a class="boton" href="comparativa.html" alt="Ir a la tabla comparativa de monitores">Comparar</a>
-            </article>
-            <hr style="clear: left;" />
-            <p><i>Fuente: <a href="https://mercadolibre.com.ar/" alt="Ir a mercadolibre.com.ar"
-                        target="_blank">mercadolibre.com.ar</a></i></p>
         </section>
     </main>
     <footer>
