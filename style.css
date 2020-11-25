@@ -84,7 +84,9 @@ header span {
 .carousel-caption p {
     text-align: center;
 }
-
+.tab-pane{
+    margin-top: 16px;
+}
 a.boton:link,
 a.boton:visited {
     background-color: darkslateblue;
