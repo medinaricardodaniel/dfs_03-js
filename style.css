@@ -1,31 +1,90 @@
-html{
+html {
     background-color: indigo;
 }
+
 body {
-    background-color: lightgrey;
+    background-color: whitesmoke;
     margin: 0;
 }
-body.container{
+
+body.container {
     padding: 0;
 }
+
 header {
     color: #efefef;
 }
-header span{
+
+header span {
     padding: 0;
     color: white;
     background-color: black;
     display: inline;
 }
 
-.titular {
-    background-image: url("img/particles-1373684_1280-1061x707.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-color: black;
-    height: 450px;
-    padding: 140px 30px 0;
+.carousel-item {
+    min-height: 330px;
 }
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .carousel-item {
+        height: 330px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .carousel-item {
+        height: 460px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .carousel-item {
+        height: 580px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .carousel-item {
+        height: 650px;
+    }
+}
+
+/*
+.interna .carousel-inner .carousel-item {
+    height: 330px;
+}*/
+.carousel-item img {
+    position: absolute;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.carousel-caption {
+    background-color: indigo;
+    padding: 20px;
+}
+
+.carousel-caption h2 {
+    color: whitesmoke;
+}
+
+.carousel-caption p {
+    text-align: center;
+}
+
 a.boton:link,
 a.boton:visited {
     background-color: darkslateblue;
@@ -40,25 +99,40 @@ a.boton:hover,
 a.boton:active {
     background-color: indigo;
 }
+
 h2 {
     font-size: 1.4rem;
 }
 
-h1, h2 {
+h1,
+h2,
+h3 {
     color: indigo;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 2rem;
+    margin-top: 1rem;
+}
+
 p {
     text-align: justify;
 }
-main {
-    background-color: whitesmoke;
-}
-section {
-    padding: 20px;
+
+.img-thumbnail {
+    margin: 12px;
 }
 
-.secFondoBco {
-    background-color: white;
+main {
+    margin: 20px;
+}
+
+section {
+    padding: 20px;
 }
 
 hr {
