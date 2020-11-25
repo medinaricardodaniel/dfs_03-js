@@ -30,28 +30,28 @@ header span {
 /* No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) {
     .carousel-item {
         height: 330px;
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .carousel-item {
         height: 460px;
     }
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
     .carousel-item {
         height: 580px;
     }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .carousel-item {
         height: 650px;
     }
@@ -145,7 +145,7 @@ footer {
     font-size: small;
     background-color: #343a40;
     color: #ddd;
-    padding: 20px;
+    padding: 36px 36px 14px;
 }
 
 footer a {
@@ -156,4 +156,12 @@ footer a {
 
 footer a:hover {
     color: white;
+}
+#autor{
+    text-align: right;
+}
+@media screen and (max-width: 768px) {
+    #autor{
+        text-align: left;
+    }
 }
