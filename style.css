@@ -17,29 +17,6 @@ header span {
     background-color: black;
     display: inline;
 }
-.carousel-item {
-    min-height: 330px;
-}
-.carousel-item img {
-    position: absolute;
-    left: -100%;
-    right: -100%;
-    top: -100%;
-    bottom: -100%;
-    margin: auto;
-    min-height: 100%;
-    min-width: 100%;
-}
-.carousel-caption {
-    background-color: indigo;
-    padding: 20px;
-}
-.carousel-caption h2 {
-    color: whitesmoke;
-}
-.carousel-caption p {
-    text-align: center;
-}
 .tab-pane{
     margin-top: 16px;
 }
@@ -52,15 +29,15 @@ a.boton:visited {
     text-decoration: none;
     display: inline-block;
 }
-.btn-primary{
+.btn-primary:link, .btn-primary:visited{
 color: #efefef;
-    background-color: indigo;
-    border-color: indigo;;
+background-color: indigo;
+border-color: indigo;
 }
-.btn-primary:hover{
+.btn-primary:hover, .btn-primary:active .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
     color: white;
-        background-color: darkslateblue;
-        border-color: darkslateblue;
+    background-color: darkslateblue;
+    border-color: darkslateblue;
     }
 a.boton:hover,
 a.boton:active {
@@ -122,32 +99,6 @@ footer a:hover {
 }
 #autor{
     text-align: right;
-}
-/* Extra small devices (portrait phones, less than 576px) */
-/* No media query for `xs` since this is the default in Bootstrap */
-/* Small devices (landscape phones, 576px and up)*/
-@media screen and (min-width: 576px) {
-    .carousel-item {
-        height: 330px;
-    }
-}
-/* Medium devices (tablets, 768px and up) */
-@media screen and (min-width: 768px) {
-    .carousel-item {
-        height: 460px;
-    }
-}
-/* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) {
-    .carousel-item {
-        height: 580px;
-    }
-}
-/* Extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width: 1200px) {
-    .carousel-item {
-        height: 650px;
-    }
 }
 @media screen and (max-width: 768px) {
     #autor{
