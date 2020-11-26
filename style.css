@@ -1,25 +1,31 @@
 html {
     background-color: indigo;
 }
+
 body {
     background-color: whitesmoke;
     margin: 0;
 }
+
 body.container {
     padding: 0;
 }
+
 header {
     color: #efefef;
 }
+
 header span {
     padding: 0;
     color: white;
     background-color: black;
     display: inline;
 }
-.tab-pane{
+
+.tab-pane {
     margin-top: 16px;
 }
+
 a.boton:link,
 a.boton:visited {
     background-color: darkslateblue;
@@ -29,37 +35,52 @@ a.boton:visited {
     text-decoration: none;
     display: inline-block;
 }
-.btn-primary:link, .btn-primary:visited{
-color: #efefef;
-background-color: indigo;
-border-color: indigo;
+
+.btn-primary:link,
+.btn-primary:visited {
+    color: #efefef;
+    background-color: indigo;
+    border-color: indigo;
 }
-.btn-primary:hover, .btn-primary:active .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+
+.btn-primary:hover,
+.btn-primary:active .btn-primary:focus,
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
     color: white;
     background-color: darkslateblue;
     border-color: darkslateblue;
-    }
+}
+
 a.boton:hover,
 a.boton:active {
     background-color: indigo;
 }
-.dropdown-item.active, .dropdown-item:active {
+
+.dropdown-item.active,
+.dropdown-item:active {
     background-color: indigo;
 }
+
 .navbar-dark .navbar-nav .nav-link.disabled {
-color:rgb(116, 100, 128);
+    color: rgb(116, 100, 128);
 }
+
 .badge-primary {
     background-color: indigo;
 }
+
 h2 {
     font-size: 1.4rem;
 }
+
 h1,
 h2,
 h3 {
     color: indigo;
 }
+
 h1,
 h2,
 h3,
@@ -68,40 +89,50 @@ h5 {
     line-height: 2rem;
     margin-top: 1rem;
 }
+
 p {
     text-align: justify;
 }
+
 .img-thumbnail {
     margin: 12px;
 }
+
 main {
     margin: 20px;
 }
+
 section {
     padding: 20px;
 }
+
 hr {
     margin: 20px 0;
 }
+
 footer {
     font-size: small;
     background-color: #343a40;
     color: #ddd;
     padding: 36px 36px 14px;
 }
+
 footer a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     color: #ccc;
 }
+
 footer a:hover {
     color: white;
 }
-#autor{
+
+#autor {
     text-align: right;
 }
+
 @media screen and (max-width: 768px) {
-    #autor{
+    #autor {
         text-align: left;
     }
 }
