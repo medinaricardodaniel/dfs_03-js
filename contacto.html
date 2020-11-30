@@ -14,11 +14,11 @@
 <body class="container">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPrincipal"
+                aria-controls="navbar-Menu_Principal" aria-expanded="false" aria-label="Menú principal">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarPrincipal">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html" alt="Ir a la página de inicio"><img src="img/casa.svg"
@@ -26,28 +26,26 @@
                             Inicio</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="paneles.html">Paneles</a>
+                        <a class="nav-link" href="paneles.html"  alt="Ir a la página sobre tecnologías de paneles">Paneles</a>
                     </li>
-                    <li class="nav-item active dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false" href="#"
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMonitores" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                             alt="Desplegar el menú de Monitores ISP">Monitores ISP</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu" aria-labelledby="secciones-Monitores dropdown">
                             <a class="dropdown-item" href="monitores.html#monitores">Monitores de 24''</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="monitores.html#comparativa"
-                                alt="Ir a la página comparativa de monitores">Comparación de monitores</a>
+                                alt="Ir a la sección comparativa de monitores">Comparación de monitores</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" tabindex="-1" aria-disabled="true"
-                            href="contacto.html">Contacto</a>
+                        <a class="nav-link disabled actual" tabindex="-1" aria-disabled="true" href="contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
-            <a class="navbar-brand" href="https://getbootstrap.com/" target="_blank"
-                alt="Ir a la página oficial de Bootstrap">
-                <img src="img/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""
+            <a class="navbar-brand">
+                <img src="img/js.svg" width="30" height="30" class="d-inline-block align-top" alt=""
                     loading="lazy">
             </a>
         </nav>
@@ -68,13 +66,13 @@
                             <h3>Envíanos tus comentarios</h3>
                         </div>
                         <div form-group>
-                            <div class="row">
+                            <div class="form-row">
                                 <div class="col">
                                     <label for="formInputNombre">Nombre</label>
-                                    <input type="text" id="formInputNombre" class="form-control" placeholder="Su nombre"
+                                    <input type="text" id="formInputNombre" class="form-control" placeholder="Tu nombre" pattern="[A-Za-z ]+"
                                         required>
                                     <div class="valid-feedback">
-                                        ¡Gracias por ingresar tu nombre!
+                                        ¡Genial!
                                     </div>
                                     <div class="invalid-feedback">
                                         Por favor ingresá tu nombre.
@@ -83,9 +81,9 @@
                                 <div class="col">
                                     <label for="formInputApellido">Apellido</label>
                                     <input type="text" id="formInputApellido" class="form-control"
-                                        placeholder="Su apellido" required>
+                                        placeholder="Tu apellido" pattern="[A-Za-z ]+" required>
                                     <div class="valid-feedback">
-                                        ¡Gracias por ingresar tu apellido!
+                                        ¡Grandioso!
                                     </div>
                                     <div class="invalid-feedback">
                                         Por favor ingresá tu apellido.
@@ -95,35 +93,37 @@
                         </div>
                         <div class="form-group">
                             <label for="formInputEmail">Dirección de email</label>
-                            <input type="email" class="form-control" id="formInputEmail" aria-describedby="emailHelp"
-                                placeholder="Su email" required>
-
+                            <input type="email" class="form-control" id="formInputEmail" aria-describedby="emailImput"
+                                placeholder="Tu email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                             <div class="valid-feedback">
-                                ¡Gracias por ingresar tu email!
+                                ¡Bárbaro!
                             </div>
                             <div class="invalid-feedback">
                                 Por favor ingresá tu email.
                             </div>
-                            <small id="emailAyuda" class="form-text text-muted">Nunca compartiremos su correo
+                            <small id="emailImput" class="form-text text-muted">Nunca compartiremos su correo
                                 electrónico
                                 con
                                 nadie más.</small>
                         </div>
                         <div class="form-group">
                             <label for="formInputMensaje">Mensaje</label>
-                            <textarea class="form-control" id="formInputMensaje" rows="3" placeholder="Su mensaje..."
+                            <textarea class="form-control" id="formInputMensaje" rows="3" placeholder="Tu mensaje..."
                                 required></textarea>
                             <div class="valid-feedback">
-                                ¡Gracias por ingresar un mensaje!
+                                ¡Gracias por escribirnos un mensaje!
                             </div>
                             <div class="invalid-feedback">
                                 Por favor envíanos un mensaje.
                             </div>
                         </div>
                         <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Acepto los términos y
+                            <input type="checkbox" class="form-check-input" id="termunis" required>
+                            <label class="form-check-label" for="terminos">Acepto los términos y
                                 condiciones</label>
+                                <div class="invalid-feedback">
+                                    Por favor acepta los términos y condiciones.
+                                </div>
                         </div>
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </form>
@@ -142,7 +142,7 @@
     <footer>
         <div class="row">
             <div class="col-md-8">
-                <p><span class="badge badge-pill badge-primary">Actividad 2: Bootstrap</span><br>"Desarrollador Full
+                <p><span class="badge badge-pill badge-primary">Actividad 3: JavaScript</span><br>"Desarrollador Full
                     Stack" dictado por <a href="https://www.ispc.edu.ar/"
                         alt="ir al sitio del Instituto Superior Politécnico de Córdoba" target="_blank">ISPC</a> (2020 -
                     Entre Ríos)</p>

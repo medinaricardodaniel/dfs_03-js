@@ -36,6 +36,7 @@ a.boton:visited {
     display: inline-block;
 }
 
+.btn-primary,
 .btn-primary:link,
 .btn-primary:visited {
     color: #efefef;
@@ -63,7 +64,7 @@ a.boton:active {
     background-color: indigo;
 }
 
-.navbar-dark .navbar-nav .nav-link.disabled {
+.navbar-dark .navbar-nav .nav-link.actual {
     color: rgb(116, 100, 128);
 }
 
