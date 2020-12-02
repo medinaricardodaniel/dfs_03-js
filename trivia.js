@@ -27,9 +27,11 @@ function evaluar() {
             switch (intento) {
                 case 3:
                     alert("¡No me suena! Por favor volvé a intentarlo");
+                    alert("Pista: la resolución es más conocida como Full HD");
                     break;
                 case 2:
                     alert("¿Será? Por favor volvé a intentarlo");
+                    alert("Pista: la resolución tiene 1920px de ancho");
                     break;
                 default:
                     alert("¡No me suena! Por favor volvé a intentarlo");
