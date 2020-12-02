@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #intentos{
+            font-style: italic;
+        }
+        #adivinanza h3{
+            margin-bottom: -20px;
+        }
+    </style>
+    <title>Trivia de conocimientos | Suplemento especial sobre monitores</title>
+</head>
+
+<body class="container">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPrincipal"
+                aria-controls="navbar-Menu_Principal" aria-expanded="false" aria-label="Menú principal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarPrincipal">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html" alt="Ir a la página de inicio"><img src="img/casa.svg"
+                                width="18" height="18" class="d-inline-block align-top" alt="" loading="lazy">
+                            Inicio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="paneles.html"
+                            alt="Ir a la página sobre tecnologías de paneles">Paneles</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMonitores" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            alt="Desplegar el menú de Monitores ISP">Monitores ISP</a>
+                        <div class="dropdown-menu" aria-labelledby="secciones-Monitores dropdown">
+                            <a class="dropdown-item" href="monitores.html#monitores">Monitores de 24''</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="monitores.html#comparativa"
+                                alt="Ir a la sección comparativa de monitores">Comparación de monitores</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled actual" aria-disabled="true" href="trivia.html"
+                            alt="Ir a la página Trivia de conocimientos">Trivia</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-disabled="true" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="navbar-brand">
+                <img src="img/js.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+            </a>
+        </nav>
+    </header>
+    <main>
+        <h1>Trivia de conocimientos</h1>
+        <section id="trivia">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3>¿Qué aprendiste sobre lo leído?</h3>
+                    <p style="font-size: large;">Prueba tus conocimientos sobre monitores y las tecnologías de paneles
+                        que los componen.</p>
+                    <p>Chequea de vez en cuando para descubrir las nuevas trivias y mantenete activo mentalmente
+                        mientras que retas los conocimientos de tus familiares y amigos. </p>
+                </div>
+                <div class="col-lg-6">
+                        <div class="jumbotron">
+                            <div id="inicio">
+                            <h3>¿Cuánto sabés de monitores?</h3>
+                            <p class="lead">Esta simple adivinanza intentará desafiar tus conocimientos acerca de las tecnologías que actualmente encontramos en los monitores.</p>
+                            <hr class="my-4">
+                            <p><strong>¿Estás preparada? ¿Estás preparado?</strong><br>¡Comenncemos con este divertido juego de conocimientos!</p>
+                            <a class="btn btn-primary btn-lg" id="inicia" onclick="comenzar()" role="button">¡Jugar!</a>
+                          </div>
+                          <div id="adivinanza">
+                            <h3>Adivinanza</h3>
+                            <p style="text-align: right; font-size: small; font-style: italic;">Pregunta: <span id="preguntaNro">4</span></p>
+                            <hr class="my-4">
+                            <p class="lead" id="pregunta">¿Cuál es la resolución de pantalla máxima del monitor, con tecnología de panel IPS, Dell P2419H?</p>
+                            <form id="trivia-form" onsubmit="return evaluar()" validate>
+                                <div form-group>
+                                    <div class="form-row">
+                                        <div class="input-group mb-2 mr-sm-2">
+                                            <label class="sr-only" for="anchoInput">Ancho</label>
+                                            <input type="number" class="form-control" id="anchoInput" placeholder="ancho"
+                                                pattern="[0-9]" required>
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">x</div>
+                                            </div>
+                                            <label class="sr-only" for="altoInput">Alto</label>
+                                            <input type="number" class="form-control" id="altoInput" placeholder="alto"
+                                                pattern="[0-9]" required>
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">px.</div>
+                                            </div>
+                                            <button type="submit" id="evalua" class="btn btn-primary"
+                                                >Arriesgar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <p>Por favor, ingresá tu respuesta.</p>
+                            <hr class="my-4">
+                            <p>Intento: <span id="intentos">1/4</span></p>
+                          </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <div id="carouselTrivia" class="carousel slide interna" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/question-mark-1105892_1280.jpg" class="d-block w-100" alt="Trivia">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-md-8">
+                <p><span class="badge badge-pill badge-primary">Actividad 3: JavaScript</span><br>"Desarrollador Full
+                    Stack" dictado por <a href="https://www.ispc.edu.ar/"
+                        alt="ir al sitio del Instituto Superior Politécnico de Córdoba" target="_blank">ISPC</a> (2020 -
+                    Entre Ríos)</p>
+            </div>
+            <div class="col-md-4">
+                <p id="autor"><br>Por <a href="maito:medinaricardodaniel@gmail.com"
+                        alt="envair un correo electrónico a medinaricardodaniel@gmail.com">Ricardo Daniel Medina</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+    <script src="trivia.js"></script>
+</body>
+
+</html>
