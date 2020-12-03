@@ -94,8 +94,7 @@
                             <p class="lead" id="pregunta">¿Cuál es la resolución de pantalla máxima del monitor, con
                                 tecnología de panel IPS, Dell P2419H?</p>
                             <div class="alert alert-info" role="alert" id="pistas">
-                                <strong>Pista:</strong> <span id="pistaTexto">You should check in on some of those
-                                    fields below.</span>
+                                <strong>Pista:</strong> <span id="pistaTexto">Aquí van las pistas.</span>
                             </div>
                             <form id="trivia-form" onsubmit="return evaluar()" validate>
                                 <div form-group>
@@ -109,7 +108,7 @@
                                             </div>
                                             <label class="sr-only" for="altoInput">Alto</label>
                                             <input type="number" class="form-control" id="altoInput" placeholder="alto"
-                                                pattern="[0-9]" min="200" max="2160" required>
+                                                pattern="[0-9]" min="320" max="4096" required>
                                             <div class="input-group-prepend">
                                                 <div class="input-group-text">px.</div>
                                             </div>
@@ -119,8 +118,19 @@
                                 </div>
                             </form>
                             <p>Por favor, ingresá tu respuesta.</p>
+                            <div class="alert alert-danger" role="alert" id="incorrecto">
+                                <strong>¡Incorrecto!</strong> <span id="incorrectoTexto">Aquí van los mensajes.</span>
+                            </div>
                             <hr class="my-4">
-                            <p>Intento: <span id="intentos">1/4</span></p>
+                            <p>Chance: <span id="intentos">1/4</span></p>
+                        </div>
+                        <div id="fin">
+                            <h3 id="tituloFin">Titulo Fin</h3>
+                            <p class="lead" id="msjFin">Mensaje fin.</p>
+                            <hr class="my-4">
+                            <p><strong>¿Te gustó? ¿Querés volver a desafiar tus conocimientos?</strong><br>¡Reiniciemos este divertido
+                                juego!</p>
+                            <a class="btn btn-primary btn-lg" id="reinicia" onclick="reiniciar()" role="button">¡Volver a jugar!</a><!--onclick="location.reload()"-->
                         </div>
                     </div>
 
