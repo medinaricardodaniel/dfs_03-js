@@ -9,10 +9,11 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <style>
-        #intentos{
+        #intentos {
             font-style: italic;
         }
-        #adivinanza h3{
+
+        #adivinanza h3 {
             margin-bottom: -20px;
         }
     </style>
@@ -67,45 +68,52 @@
         <section id="trivia">
             <div class="row">
                 <div class="col-lg-6">
+                    <img src="img/women-1209678_640x273.jpg" class="img-fluid">
                     <h3>¿Qué aprendiste sobre lo leído?</h3>
                     <p style="font-size: large;">Prueba tus conocimientos sobre monitores y las tecnologías de paneles
                         que los componen.</p>
                     <p>Chequea de vez en cuando para descubrir las nuevas trivias y mantenete activo mentalmente
                         mientras que retas los conocimientos de tus familiares y amigos. </p>
-                        <img src="img/women-1209678_640x273.jpg" class="img-fluid">
                 </div>
                 <div class="col-lg-6">
-                        <div class="jumbotron">
-                            <div id="inicio">
+                    <div class="jumbotron">
+                        <div id="inicio">
                             <h3>¿Cuánto sabés de monitores?</h3>
-                            <p class="lead">Esta simple adivinanza intentará desafiar tus conocimientos acerca de las tecnologías que actualmente encontramos en los monitores.</p>
+                            <p class="lead">Esta simple adivinanza intentará desafiar tus conocimientos acerca de las
+                                tecnologías que actualmente encontramos en los monitores.</p>
                             <hr class="my-4">
-                            <p><strong>¿Estás preparada? ¿Estás preparado?</strong><br>¡Comenncemos con este divertido juego de conocimientos!</p>
+                            <p><strong>¿Estás preparada? ¿Estás preparado?</strong><br>¡Comenncemos con este divertido
+                                juego de conocimientos!</p>
                             <a class="btn btn-primary btn-lg" id="inicia" onclick="comenzar()" role="button">¡Jugar!</a>
-                          </div>
-                          <div id="adivinanza">
+                        </div>
+                        <div id="adivinanza">
                             <h3>Adivinanza</h3>
-                            <p style="text-align: right; font-size: small; font-style: italic;">Pregunta: <span id="preguntaNro">4</span></p>
+                            <p style="text-align: right; font-size: small; font-style: italic;">Pregunta: <span
+                                    id="preguntaNro">4</span></p>
                             <hr class="my-4">
-                            <p class="lead" id="pregunta">¿Cuál es la resolución de pantalla máxima del monitor, con tecnología de panel IPS, Dell P2419H?</p>
+                            <p class="lead" id="pregunta">¿Cuál es la resolución de pantalla máxima del monitor, con
+                                tecnología de panel IPS, Dell P2419H?</p>
+                            <div class="alert alert-info" role="alert" id="pistas">
+                                <strong>Pista:</strong> <span id="pistaTexto">You should check in on some of those
+                                    fields below.</span>
+                            </div>
                             <form id="trivia-form" onsubmit="return evaluar()" validate>
                                 <div form-group>
                                     <div class="form-row">
                                         <div class="input-group mb-2 mr-sm-2">
                                             <label class="sr-only" for="anchoInput">Ancho</label>
-                                            <input type="number" class="form-control" id="anchoInput" placeholder="ancho"
-                                                pattern="[0-9]" required>
+                                            <input type="number" class="form-control" id="anchoInput"
+                                                placeholder="ancho" pattern="[0-9]" min="320" max="4096" required>
                                             <div class="input-group-prepend">
                                                 <div class="input-group-text">x</div>
                                             </div>
                                             <label class="sr-only" for="altoInput">Alto</label>
                                             <input type="number" class="form-control" id="altoInput" placeholder="alto"
-                                                pattern="[0-9]" required>
+                                                pattern="[0-9]" min="200" max="2160" required>
                                             <div class="input-group-prepend">
                                                 <div class="input-group-text">px.</div>
                                             </div>
-                                            <button type="submit" id="evalua" class="btn btn-primary"
-                                                >Arriesgar</button>
+                                            <button type="submit" id="evalua" class="btn btn-primary">Arriesgar</button>
                                         </div>
                                     </div>
                                 </div>
@@ -113,9 +121,9 @@
                             <p>Por favor, ingresá tu respuesta.</p>
                             <hr class="my-4">
                             <p>Intento: <span id="intentos">1/4</span></p>
-                          </div>
+                        </div>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
