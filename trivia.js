@@ -17,7 +17,7 @@ var msjFinComun = "";//"<br>Pronto tendremos más preguntas..."
 var tituloFinGana = "¡Sos una genia! ¡Sos un genio!";
 var msjFinGana = "¡Impresionante! ¡Estupendo! Sigue por este camino.";
 var tituloFinPierde = "¡Lamentablemente sos un queso!";
-var msjFinPierde = "La recomendación es que vuelvas a leer tanto la página tecnologías antes de volver a intentarlo.";
+var msjFinPierde = "La recomendación es que vuelvas a leer tanto la página <a href='paneles.html' alt='ir a la página de paneles'>tecnologías de paneles</a> cómo la de <a href='monitores.html' alt='ir a la página de monitores'>monitores</a> antes de volver a intentarlo.";
 
 function bienvenida(){
     inicializar();
@@ -30,9 +30,8 @@ function bienvenida(){
 function inicializar() {
     document.getElementById("incorrecto").style.display = 'none';
     document.getElementById("pistas").style.display = 'none';
+    resetearEntrada();
     document.getElementById("anchoInput").disabled = false;
-    document.getElementById("anchoInput").value = undefined;
-    document.getElementById("altoInput").value = undefined;
     document.getElementById("evalua").disabled = true;
 }
 function reiniciar(){
@@ -72,7 +71,10 @@ function finalizar(gana) {
     document.getElementById("adivinanza").style.display = 'none';
     document.getElementById("fin").style.display = 'block';
 }
-
+function resetearEntrada(){
+    document.getElementById("anchoInput").value = undefined;
+    document.getElementById("altoInput").value = undefined;
+}
 function mostrarMsjIncorrecto(nivel) {
     document.getElementById("incorrectoTexto").innerHTML = msjIncorrecto[nivel] + "<br>" + msjNuevoIntento;
     document.getElementById("incorrecto").style.display = 'block';
@@ -102,6 +104,7 @@ function actualizarIncorrecto(nivel) {
 function evaluar() {
     event.preventDefault();
     arriesga = document.getElementById("anchoInput").value + "x" + document.getElementById("altoInput").value;
+    resetearEntrada();
     if (arriesga != rta) {
         if (intento < intentosMax) {
             switch (intento) {
